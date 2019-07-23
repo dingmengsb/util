@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     var person = [
+  {
+    name:"孙悟空123",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  },
+  {
+    name:"孙悟空123",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  },
+  {
+    name:"孙悟空123123",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  },
+  {
+    name:"孙悟空123123",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  },
+  {
+    name:"孙悟空123123",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  },
+  {
+    name:"孙悟空122312312",
+    weapon:"如意金箍棒",
+    experience:"大闹天宫、西天取经",
+    post:"斗战胜佛、齐天大圣"
+  }
+]
+     const res = new Map();
+     console.log(person.filter(item=>!res.has(item.name) && res.set(item.name,1)))
+
+    </script>
+</body>
+</html>
