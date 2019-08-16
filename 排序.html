@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var arr=[9,5,7,6,2,1,8,3,4];
+      var len=arr.length;
+      for(let i=0;i<len;i++){
+          for(let j=0;j<len-i;j++){   //冒泡排序
+              if(arr[j]>arr[j+1]){
+                  [arr[j],arr[j+1]]=[arr[j+1],arr[j]]
+              }
+          }
+      }
+      console.log(arr);
+
+      let minIndex;
+      for(let i=0;i<len;i++){  //选择排序
+         minIndex=i;
+         for(let j=i+1;j<len;j++){
+             if(arr[minIndex]>arr[j]){
+                 minIndex=j
+             }
+         }
+         [arr[i],arr[minIndex]]=[arr[minIndex],arr[i]]
+      } 
+      console.log(arr);
+
+      var str=[1,1,2,2,1,1,1,1,1,1,5,6,8,7,9];
+      let newStr=[];
+
+     // arr.filter((item,index)=>newArr.includes(item)?"":newArr.push(item)); 
+     
+    //  for(let i=0;i<str.length;i++){
+    //     if(newStr.indexOf(str[i])===-1){
+    //         newStr.push(str[i]);
+    //     }
+    //  }
+
+    //   let obj={}
+    //   for(let i=0;i<str.length;i++){
+    //      if(!obj[str[i]]){
+    //          obj[str[i]]=1;
+    //          newStr.push(str[i])
+    //      }
+    //   }
+
+    // let newArr=str.sort();
+    // newStr[newArr[0]]
+    // for(let i=0;i<newArr.length;i++){
+    //   if(newArr[i]!==newArr[i+1]){
+    //       newStr.push(newArr[i])
+    //   }
+    // }
+
+      console.log(newStr);
+      
+    </script>
+</body>
+</html>

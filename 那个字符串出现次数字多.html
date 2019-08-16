@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+       let str="2222222222222222222222222123111111111";
+       let len=str.length;
+       let obj={};
+       for(let i=0;i<len;i++){
+           if(obj[str[i]]){
+            obj[str[i]]=++ obj[str[i]];
+           }else{
+               obj[str[i]]=1;
+           }
+       }
+     let max=0,max_index="";
+     for(let i in obj){
+         if(max<obj[i]){
+             max=obj[i];
+             max_index=i;
+         }
+     }
+     console.log(max,max_index);
+     </script>
+</body>
+</html>
